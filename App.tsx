@@ -3,22 +3,26 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
+import { useTranslation } from 'react-i18next';
 import { VehicleListScreen } from './src/screens/VehicleListScreen';
 import { VehicleMapScreen } from './src/screens/VehicleMapScreen';
 import { VehicleDetailsScreen } from './src/screens/VehicleDetailsScreen';
 import { SettingsScreen } from './src/screens/SettingsScreen';
+import './src/shared/i18n';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 const VehicleListStack: React.FC = ({ navigation }) => {
+  const { t } = useTranslation();
+
   return (
     <Stack.Navigator>
       <Stack.Screen
         name='VehicleList'
         component={VehicleListScreen}
         options={{
-          title: 'Список ТС',
+          title: t('vehicleList'),
           headerRight: () => (
             <Ionicons
               name='map-outline'
@@ -34,14 +38,14 @@ const VehicleListStack: React.FC = ({ navigation }) => {
         name='VehicleMap'
         component={VehicleMapScreen}
         options={{
-          title: 'Карта',
+          title: t('map'),
         }}
       />
       <Stack.Screen
         name='VehicleDetails'
         component={VehicleDetailsScreen}
         options={{
-          title: 'Информация о ТС',
+          title: t('information'),
         }}
       />
     </Stack.Navigator>
@@ -49,6 +53,8 @@ const VehicleListStack: React.FC = ({ navigation }) => {
 };
 
 const App: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <NavigationContainer>
       <Tab.Navigator>
@@ -56,7 +62,7 @@ const App: React.FC = () => {
           name='VehicleList'
           component={VehicleListStack}
           options={{
-            title: 'Список ТС',
+            title: t('vehicleList'),
             headerShown: false,
             tabBarIcon: ({ color, size }) => <Ionicons name='list-outline' size={size} color={color} />,
           }}
@@ -65,7 +71,7 @@ const App: React.FC = () => {
           name='Settings'
           component={SettingsScreen}
           options={{
-            title: 'Настройки',
+            title: t('settings'),
             headerShown: false,
             tabBarIcon: ({ color, size }) => <Ionicons name='settings-outline' size={size} color={color} />,
           }}
