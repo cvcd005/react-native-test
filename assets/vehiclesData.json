@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "category": "Грузовой",
+    "driverName": "Иван Иванов",
+    "driverContact": "+1234567890",
+    "latitude": 55.751244,
+    "longitude": 37.618423
+  },
+  {
+    "id": 2,
+    "category": "Пассажирский",
+    "driverName": "Петр Петров",
+    "driverContact": "+0987654321",
+    "latitude": 55.752112,
+    "longitude": 37.617787
+  },
+  {
+    "id": 3,
+    "category": "Спецтранспорт",
+    "driverName": "Алексей Сидоров",
+    "driverContact": "+1112223333",
+    "latitude": 55.751987,
+    "longitude": 37.619241
+  },
+  {
+    "id": 4,
+    "category": "Грузовой",
+    "driverName": "Михаил Николаев",
+    "driverContact": "+4445556666",
+    "latitude": 55.751422,
+    "longitude": 37.616819
+  },
+  {
+    "id": 5,
+    "category": "Пассажирский",
+    "driverName": "Елена Смирнова",
+    "driverContact": "+7778889999",
+    "latitude": 55.750832,
+    "longitude": 37.620036
+  },
+  {
+    "id": 6,
+    "category": "Спецтранспорт",
+    "driverName": "Дмитрий Козлов",
+    "driverContact": "+2223334444",
+    "latitude": 55.75163,
+    "longitude": 37.617149
+  },
+  {
+    "id": 7,
+    "category": "Грузовой",
+    "driverName": "Анна Васильева",
+    "driverContact": "+6667778888",
+    "latitude": 55.75099,
+    "longitude": 37.619876
+  },
+  {
+    "id": 8,
+    "category": "Пассажирский",
+    "driverName": "Сергей Зайцев",
+    "driverContact": "+9990001111",
+    "latitude": 55.750306,
+    "longitude": 37.617332
+  },
+  {
+    "id": 9,
+    "category": "Спецтранспорт",
+    "driverName": "Ольга Морозова",
+    "driverContact": "+3334445555",
+    "latitude": 55.751839,
+    "longitude": 37.620931
+  },
+  {
+    "id": 10,
+    "category": "Грузовой",
+    "driverName": "Владимир Петров",
+    "driverContact": "+5556667777",
+    "latitude": 55.750715,
+    "longitude": 37.61604
+  }
+]
